@@ -8,6 +8,7 @@
     --Primary-color-black: #152427;
     --text-color-white: #fff;
     --Scondery-color-light-green: #e2eddf;
+    --text-color-light-gray: #7d8188;
 }
 
 html {
@@ -219,6 +220,7 @@ a {
     height: 466px;
     border-radius: 110px;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .hero__img-bottom {
@@ -319,4 +321,135 @@ a {
 
 .clients__branch:hover {
     transform: scale(1.1);
+}
+
+.service {
+    margin-top: 106px;
+}
+
+.service__inner {
+    display: flex;
+    align-items: center;
+}
+
+.service__title {
+    color: var(--Primary-color-black);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.62;
+}
+
+.service__title::before {
+    width: 25px;
+    height: 1px;
+    content: "";
+    display: inline-block;
+    background: var(--Primary-color-black);
+    position: relative;
+    top: -9px;
+    margin-right: 21px;
+}
+
+.service__heading {
+    color: var(--Primary-color-black);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1.24;
+    max-width: 520px;
+    margin-top: 12px;
+}
+
+.service__heading::after {
+    content: "";
+    display: inline-block;
+    width: 66px;
+    height: 2px;
+    background: var(--Primary-color-black);
+    position: relative;
+    top: -8px;
+}
+
+.service__control {
+    margin-left: 422px;
+    column-gap: 17px;
+    display: flex;
+}
+
+.service__control-btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    color: #152427;
+    background: #e2eddf;
+    transition: 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__control-btn:hover {
+    color: #fff;
+    background: #143c3c;
+    cursor: pointer;
+}
+
+.service__control-btn--right {
+    rotate: 180deg;
+}
+
+.service__list {
+    margin-top: 76px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.service-item {
+    flex: 1;
+}
+
+.service-item:hover {
+    box-shadow: -6px 9px 64px -4px rgba(118, 118, 118, 0.25);
+}
+
+.service-item:hover .service-item__img {
+    transform: scale(1.1);
+}
+
+.service-item__thumb {
+    width: 370px;
+    height: 318px;
+    overflow: hidden;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service-item__img {
+    transition: 0.25s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.service-item__body {
+    padding-top: 24px;
+    border-radius: 0 0 20px 20px;
+}
+
+.service-item__heading {
+    color: var(--Primary-color-black);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service-item__desc {
+    color: var(--text-color-light-gray);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.71;
+    margin-top: 18px;
+    max-width: 268px;
 }
