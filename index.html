@@ -18,6 +18,13 @@
             rel="stylesheet"
         />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sonsie+One&display=swap"
+            rel="stylesheet"
+        />
+
         <!-- CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
@@ -25,7 +32,7 @@
         <title>Document</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header fixed">
             <div class="main-content">
                 <div class="header-top">
                     <a href="#!" class="logo__link">
@@ -61,6 +68,9 @@
                 </div>
                 <div class="header__bar"></div>
             </div>
+        </header>
+
+        <main style="height: 5000px">
             <section class="hero">
                 <div class="main-content">
                     <div class="hero__inner">
@@ -133,6 +143,42 @@
                     </div>
                 </div>
             </section>
-        </header>
+            <section class="clients">
+                <div class="main-content">
+                    <div class="clients__inner">
+                        <a href="#!" class="clients__branch clients-google"
+                            >Google</a
+                        >
+                        <a href="#!" class="clients__branch clients-slack">
+                            <img
+                                src="./assets/img/slack.svg"
+                                alt=""
+                                class="clients-slack--img"
+                            />
+                            <span class="clients-slack--text">slack</span>
+                        </a>
+                        <a href="#!" class="clients__branch clients-agworld">
+                            <img
+                                src="./assets/img/Agworldsvg.svg"
+                                alt=""
+                                class="clients-agworld--img"
+                            />
+                            <span class="clients-agworld--text">Agworld</span>
+                        </a>
+                        <a href="#!" class="clients__branch clients-rioTinto"
+                            >RioTinto</a
+                        >
+                        <a href="#!" class="clients__branch clients-heroku">
+                            <img
+                                src="./assets/img/HEROKU.svg"
+                                alt=""
+                                class="clients-heroku--img"
+                            />
+                            <span class="clients-heroku-text">HEROKU</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
 </html>

@@ -7,6 +7,7 @@
     --Primary-color-black-green: #143c3c;
     --Primary-color-black: #152427;
     --text-color-white: #fff;
+    --Scondery-color-light-green: #e2eddf;
 }
 
 html {
@@ -51,6 +52,13 @@ a {
 }
 
 /* Header */
+.fixed {
+    position: sticky;
+    top: -14px;
+    z-index: 1;
+    background: #fff;
+}
+
 .header-top {
     padding-top: 28px;
     display: flex;
@@ -236,21 +244,79 @@ a {
 
 .hero__flower--top {
     position: absolute;
-    left: -167px;
-    top: -24px;
+    left: -218px;
+    top: -31px;
 }
 
 .hero__drawing-line--top {
-    left: -121px;
-    bottom: 205px;
+    left: -172px;
+    top: -32px;
 }
 
 .hero__flower--bottom {
-    right: 32px;
-    bottom: -107px;
+    top: 471px;
+    right: 1px;
 }
 
 .hero__drawing-line--bottom {
-    top: 329px;
-    right: 77px;
+    top: 229px;
+    right: 45px;
+}
+
+.clients {
+    margin-top: 130px;
+}
+
+.clients__inner {
+    padding: 85px 121px;
+    background: var(--Scondery-color-light-green);
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients__branch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.25s;
+}
+
+.clients-google {
+    color: var(--Primary-color-black-green, #143c3c);
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.clients-slack--text {
+    color: var(--Primary-color-black-green, #143c3c);
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.clients-agworld--text {
+    color: #163c35;
+    font-size: 2.6rem;
+    margin-left: 11px;
+}
+
+.clients-rioTinto {
+    color: var(--Primary-color-black-green, #143c3c);
+    font-family: "Sonsie One";
+    font-size: 2.3rem;
+    font-weight: 400;
+}
+
+.clients-heroku-text {
+    color: var(--Primary-color-black-green, #143c3c);
+    font-size: 1.9rem;
+    font-weight: 600;
+    letter-spacing: 1.995px;
+    margin-left: 10px;
+}
+
+.clients__branch:hover {
+    transform: scale(1.1);
 }
