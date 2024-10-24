@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --text-color-black-gray: #575d5e;
+    --Primary-color-black-green: #143c3c;
+    --Primary-color-black: #152427;
+    --text-color-white: #fff;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -13,8 +20,237 @@ body {
 
 /* Common */
 .main-content {
-    width: 1440px;
+    width: 1140px;
     max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 57px;
+
+    line-height: 57px;
+    display: inline-block;
+    min-width: 173px;
+    color: var(--text-color-white);
+    text-align: center;
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    background: var(--Primary-color-black-green);
+    border: 1.5px solid #143c3c;
+    border-radius: 999px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Header */
+.header-top {
+    padding-top: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 8px 19px;
+    color: var(--text-color-black-gray);
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    position: relative;
+}
+
+.navbar__link-active,
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: var(--Primary-color-black);
+}
+
+.navbar__link-active::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    background: var(--Primary-color-black-green);
+    bottom: -25px;
+    left: 19px;
+    position: absolute;
+}
+
+.action {
+    margin-left: 69px;
+}
+
+.header__bar {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+    margin-top: 13px;
+}
+
+.hero {
+    margin-top: 103px;
+}
+
+.hero__inner {
+    display: flex;
+}
+
+.hero__content {
+    width: 39%;
+    flex-shrink: 0;
+    padding-top: 43px;
+}
+
+.hero__heading {
+    color: var(--Primary-color-black);
+    font-family: "Public Sans";
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    width: 368px;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    color: var(--text-color-black-gray);
+    font-family: "Public Sans";
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+    width: 341px;
+}
+
+.hero__cta {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn {
+    margin-left: 36px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero-btn__play {
+    border-color: #143c3c transparent transparent #143c3c;
+    border-width: 4px;
+    border-style: solid;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(316deg);
+    transition: 0.25s;
+}
+
+.hero-btn-img {
+    width: 44px;
+    height: 43px;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+.hero-btn__text {
+    color: #152427;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+    margin-left: 15px;
+}
+
+.hero-btn:hover .hero-btn__play {
+    transform: rotate(137deg);
+}
+
+.hero-btn:hover .hero-btn-img {
+    transform: rotate(165deg);
+}
+
+.hero__media {
+    max-height: 543px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.hero__thumb {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+    object-fit: cover;
+}
+
+.hero__img-bottom {
+    margin-top: 77px;
+}
+
+.hero__background {
+    background: #4dbb9a;
+    filter: blur(137px);
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    position: absolute;
+    right: 150px;
+    top: 122px;
+    z-index: -1;
+}
+
+.hero__flower,
+.hero__drawing-line {
+    position: absolute;
+}
+
+.hero__flower--top {
+    position: absolute;
+    left: -167px;
+    top: -24px;
+}
+
+.hero__drawing-line--top {
+    left: -121px;
+    bottom: 205px;
+}
+
+.hero__flower--bottom {
+    right: 32px;
+    bottom: -107px;
+}
+
+.hero__drawing-line--bottom {
+    top: 329px;
+    right: 77px;
 }
