@@ -1035,12 +1035,23 @@ a {
     flex: 1;
 }
 
+.blog-item__thumb {
+    height: 317px;
+    overflow: hidden;
+    border-radius: 40px 40px 0 0;
+}
+
 .blog-item__img {
     width: 100%;
-    height: 317px;
+    height: 100%;
     border-radius: 40px 40px 0px 0px;
     object-fit: cover;
     display: block;
+    transition: 0.25s;
+}
+
+.blog-item:hover .blog-item__img {
+    transform: scale(1.1);
 }
 
 .blog-item__body {
@@ -1102,4 +1113,123 @@ a {
     line-height: 1.2;
     display: block;
     margin-top: 16px;
+}
+
+.footer {
+    background: var(--Primary-color-black-green);
+    padding: 100px 0 50px;
+    margin-top: 102px;
+}
+
+.footer__row {
+    display: flex;
+    align-items: center;
+}
+
+.footer__heading {
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+.footer__form {
+    display: flex;
+}
+
+.footer-form__input {
+    margin-top: 25px;
+    width: 354px;
+    background: transparent;
+    border: none;
+    color: var(--Scondery-color-gray);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+    outline: none;
+}
+
+.footer-form::after {
+    content: "";
+    display: block;
+    width: 354px;
+    height: 1px;
+    background: var(--Scondery-color-gray);
+    position: relative;
+    bottom: -36px;
+}
+
+.footer-form__btn {
+    border: none;
+    outline: none;
+    background: transparent;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.footer__social {
+    margin-top: 84px;
+    display: flex;
+    align-items: center;
+    column-gap: 22px;
+}
+
+.footer__social-btn {
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    background: transparent;
+    border-radius: 50%;
+    border: 1px solid #265252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: 0.25s;
+}
+
+.footer__social-btn:hover {
+    background: #a75325;
+    border-color: transparent;
+}
+
+.footer__column--right {
+    margin-left: auto;
+    display: flex;
+    column-gap: 50px;
+    font-family: "Public Sans";
+}
+
+.footer__title {
+    color: var(--text-color-white);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+
+.footer__list {
+    margin-top: 6px;
+}
+
+.footer__Link {
+    color: var(--Scondery-color-gray);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.25;
+    transition: 0.25s;
+}
+
+.footer__Link:hover {
+    text-decoration: underline;
+}
+
+.footer__bar {
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #143c3c 2.28%,
+        #295a5a 55.65%,
+        rgba(38, 82, 82, 0) 102.06%
+    );
+    margin-top: 45px;
 }
