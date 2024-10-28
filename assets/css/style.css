@@ -436,7 +436,7 @@ a {
 }
 
 .service-item__body {
-    padding: 24px 0 24px;
+    padding: 24px 0 24px 10px;
     border-radius: 0 0 20px 20px;
 }
 
@@ -861,6 +861,8 @@ a {
 
 .video__arrow-img {
     margin-left: 26px;
+    padding: 8px;
+    z-index: 2;
 }
 
 .video__inner {
